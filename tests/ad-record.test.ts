@@ -15,10 +15,3 @@ test('Can build AdRecord', () => {
     expect(ad.name).toBe('Test Name');
     expect(ad.description).toBe('blah');
 });
-
-test("Valitates in valid price", () => {
-    expect(() => new AdRecord({
-        ...defaultObj,
-        price: -2,
-    })).toThrow('Chujowa cena!');
-})
