@@ -16,7 +16,7 @@ app.use(rateLimit({
     max: 100,
 }))
 
-app.use('/ad', adRouter);
+app.use('/api/ad', adRouter);
 
 app.use(handleError);
 
